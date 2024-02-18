@@ -1,0 +1,317 @@
+body{
+    display: grid;
+    place-items: center;
+    height: 100svh;
+    background-color: #2C2978;
+    
+}
+
+.main-container{
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    color: #FEF100;
+    padding: 1rem;
+}
+
+.main-container > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.ini-dialog{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0;
+    margin: 0;
+    background-color: #2C2978;
+}
+
+.ini-dialog > button{
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    padding: 1rem;
+    min-width: 900px;
+    background-color: transparent;
+    outline: none;
+    border: .25rem solid  #FEF100;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: all ease-in-out 100ms;
+}
+
+.ini-dialog > button:hover{
+    background-color: #FEF100;
+    color: black;
+}
+
+.main_form > input{
+    font-size: 2rem;
+    width: 70%;
+    outline: 0;
+    border: 0;
+}
+
+.main_form{
+    width: 100%;
+    text-align: center;
+}
+
+
+.ereg-form{
+    display: grid;
+}
+
+.error-dialog{
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 900;
+}
+
+.error-dialog h1{
+    display: inline-block;
+}
+
+.success-dialog{
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 900;
+    z-index: 1;
+}
+
+.success-dialog h1{
+    display: inline-block;
+}
+
+.ereg-form{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ereg-form > input, select{
+    margin-bottom:1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.ereg-form > span {
+    color: #FEF100;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: .75rem;
+}
+
+.ereg-form > input[type="file"]{
+    color: white;
+}
+
+.ereg-form > button{
+    font-size: 2rem;
+    background-color: #FEF100;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: fit-content;
+    place-self: end;
+    padding: 1rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+}
+
+.dashboard-items > li{
+   min-width: 400px;
+   background-color: transparent;
+   margin: 1rem;
+   text-align: center;
+   padding: 1rem;
+   border: 10px solid #FEF100;
+   transition: all ease-in-out 200ms;
+}
+
+.dashboard-items > li:hover{
+    border-color: white;
+    border-radius: 100px;
+    transition: all ease-in-out 200ms;
+}
+ 
+.dashboard-items > li > a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+}
+
+.dashboard-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    background-color: #FEF100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.reg-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    background-color: #FEF100;
+}
+
+.reg-header > select{
+    font-size: 1.5rem;
+}
+
+.confirm-rfid{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.confirm-rfid:disabled{
+    background-color: rgba(19, 1, 1, 0.3);
+}
+
+.change-rfid:disabled{
+    background-color: rgba(19, 1, 1, 0.3);
+}
+
+.sid:disabled{
+    background-color: white;
+}
+
+.eid:disabled{
+    background-color: white;
+}
+
+
+.update-placeholder{
+    display: block;
+    height: 80%;
+    width: 90%;
+    background-color: #FEF100;
+    transition: all ease-in-out 200ms;
+}
+
+.student-update-con{
+    display: none;
+    height: max-content;
+    width: 90%;
+    border: 5px solid #FEF100;
+    transition: all ease-in-out 200ms;
+    padding: 1rem;
+
+}
+
+.student-update-con > form > button{
+    font-size: 1rem;
+}
+
+.student-update-con > form > span{
+    font-size: 1.5rem;
+}
+
+.student-update-con > form > input,select{
+    font-size: 1.5rem;
+}
+
+.student-update-con > form > button[type="button"]{
+    background-color: white;
+    place-self: start;
+}
+
+.student-update-con > form > input[type="file"]{
+    color: transparent;
+}
+
+.employee-update-con{
+    display: none;
+    height: max-content;
+    width: 90%;
+    border: 5px solid #FEF100;
+    transition: all ease-in-out 200ms;
+    padding: 1rem;
+
+}
+
+.employee-update-con > form > button{
+    font-size: 1rem;
+}
+
+.employee-update-con > form > span{
+    font-size: 1.5rem;
+}
+
+.employee-update-con > form > input,select{
+    font-size: 1.5rem;
+}
+
+.employee-update-con > form > button[type="button"]{
+    background-color: white;
+    place-self: start;
+}
+
+.employee-update-con > form > input[type="file"]{
+    color: transparent;
+}
+
+.change-rfid {
+    font-size: 1.5rem;
+    color: white;
+ }
+
+.main-del-con{
+    display: grid;
+}
+
+.genex-form{
+    display: grid;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.genex-form > label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.genex-form > input[type="date"]{
+    font-size: 2rem;
+}
+
+.genex-form > select{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+}
+
+.genex-form > button{
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}

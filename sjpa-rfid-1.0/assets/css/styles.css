@@ -1,0 +1,213 @@
+@font-face {
+   font-family: 'Friz Quadrata Std Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Friz Quadrata Std Italic'), url('../media/font/friz-quadrata-std-italic-587033b2c95df.woff') format('woff');
+}
+
+
+@font-face {
+   font-family: 'Friz Quadrata Std Medium';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Friz Quadrata Std Medium'), url('../media/font/friz-quadrata-std-medium-5870338ec7ef8.woff') format('woff');
+}
+
+
+@font-face {
+   font-family: 'Friz Quadrata Std Bold';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Friz Quadrata Std Bold'), url('../media/font/friz-quadrata-std-bold-587034a220f9f.woff') format('woff');
+}
+
+
+@font-face {
+   font-family: 'Friz Quadrata Std Bold Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Friz Quadrata Std Bold Italic'), url('../media/font/friz-quadrata-std-bold-italic-587033d6d4298.woff') format('woff');
+}
+
+body,
+dialog,
+input,
+button {
+   font-family: 'Friz Quadrata Std Medium';
+}
+
+body {
+   display: grid;
+   place-items: center;
+   height: 100svh;
+   background-color: #2C2978;
+   font-size: 1rem;
+   position: relative;
+}
+
+.return-button {
+   position: absolute;
+   left: 0;
+   top: 0;
+   margin: 2rem;
+   font-size: 3rem;
+   text-transform: capitalize;
+   border: none;
+   outline: none;
+   padding: 1rem;
+   border-radius: 1rem;
+}
+
+.ini-modal {
+   display: flex;
+   width: 100%;
+   height: 100svh;
+   justify-content: center;
+   align-items: center;
+   gap: 7rem;
+   border: none;
+   margin: 0;
+   padding: 0;
+   background-color: rgba(13, 33, 74, 0.897);
+   z-index: 1;
+}
+
+.ini-modal>button {
+   font-size: 6rem;
+   font-family: 'Friz Quadrata Std Medium';
+   padding: 6rem 2rem;
+   text-transform: uppercase;
+   min-width: 600px;
+   font-weight: bold;
+   border: none;
+   letter-spacing: .50rem;
+   box-shadow: 0px 0px 6rem rgba(255, 255, 255, 0.597);
+   border-radius: 10px;
+}
+
+.ini-modal>button:nth-child(1) {
+   background-color: #FEF100;
+   color: white;
+   text-shadow: 0px 0px 1rem black;
+}
+
+.ini-modal>button:nth-child(2) {
+   background-color: #2C2978;
+   color: white;
+   text-shadow: 0px 0px 1rem black;
+}
+
+.main-container {
+   display: grid;
+   place-items: center;
+   gap: 1rem;
+}
+
+.main-container>h1 {
+   font-size: 6.5rem;
+   color: #FEF100;
+}
+
+.main-container>p {
+   font-size: 3.5rem;
+   color: white;
+}
+
+.main-container>img {
+   width: 350px;
+}
+
+.main-form>input {
+   outline: none;
+   border: none;
+   color: transparent;
+   background-color: transparent;
+   caret-color: transparent;
+}
+
+.fa-down-long {
+   z-index: -1;
+}
+
+.employee-dialog {
+   display: none;
+   outline: none;
+   border: none;
+   border-radius: 1rem;
+}
+
+.wait_dialog{
+   background-color: blue;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 7rem;
+   text-transform: uppercase;
+   font-weight: 900;
+}
+
+
+.student-dialog {
+   display: none;
+   outline: none;
+   border: none;
+   border-radius: 1rem;
+}
+
+.main-content{
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  padding: 1rem;
+}
+
+.sub-content:nth-child(1)>img {
+   min-width: 300px;
+   min-height: 300px;
+   max-width: 300px;
+   max-height: 300px;
+   border: 10px solid #2C2978;
+}
+
+.sub-content:nth-child(2) {
+   display: grid;
+   gap: 1rem;
+}
+
+.sub-content:nth-child(2) > input {
+   padding: .5rem;
+   min-width: 300px ;
+   font-size: 2.5rem;
+   font-weight: 200;
+}
+
+.time-container{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #2924c0;
+   min-height: 30px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+  
+}
+
+.time-container > h1{
+   font-size: 1.5rem;
+   padding: 1rem;
+}
+
+.error-dialog{
+   background-color: red;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 8rem;
+   text-transform: uppercase;
+   font-family: 900;
+}
+
+.error-dialog h1{
+   display: inline-block;
+}
